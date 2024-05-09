@@ -166,6 +166,45 @@ body {
     color: purple;
 }
 
+@media screen and (max-width: 1024px) {
+    /* container */
+    .container__caixa {
+        margin: 2em;
+    }
+
+    /* secundario */
+    .container__descricao {
+        padding: 1em;
+    }
+
+    .secundario__imagem {
+        width: 80%;
+        margin: 2em auto;
+    }
+
+    /* dispositivos */
+    .dispositivos__titulo {
+        font-size: 36px;
+    }
+
+    .lista__item {
+        font-size: 24px;
+    }
+
+    .dispositivos__lista {
+        margin: 3em 0;
+    }
+
+    /* rodape */
+    .rodape__lista {
+        gap: 20px;
+    }
+
+    .rodape__texto {
+        font-size: 12px;
+    }
+}
+
 @media screen and (max-width: 768px) {
 
     /*container*/
