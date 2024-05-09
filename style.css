@@ -24,6 +24,8 @@ body {
     background-image: url("img/Background.png");
     background-repeat: no-repeat;
     background-size: contain;
+    align-items: center;
+    text-align: center;
 }
 
 .container {
@@ -32,9 +34,17 @@ body {
     grid-template-columns: 50% 50%;
 }
 
+.container__caixa {
+    margin: 0 6em;
+}
+
 .container__titulo{
     font-size: 28px;
     font-weight: 700;
+}
+
+.container__imagem{
+    margin: 1em 0 2em 0;
 }
 
 .container__botao{
@@ -44,6 +54,12 @@ body {
     color: var(--branco-principal);
     text-decoration: none;
     display: block;
+    margin-bottom: 1em;
+}
+
+.container__aviso {
+    font-size: 12px;
+    color: var(--cinza-secundario);
 }
 
 .botao__secundario{
@@ -51,7 +67,31 @@ body {
     border: 2px solid var(--branco-principal);
 }
 
-.container__aviso {
-    font-size: 12px;
+.secundario{
+    align-items: center;
+    margin: 0 10em;
+}
+
+.secudario__imagem {
+    width: 80%;
+}
+
+.descricao__titulo {
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--branco-principal);
+    margin-bottom: 0.3em;
+}
+
+.descricao__texto{
     color: var(--cinza-secundario);
+}
+
+.secundario__botao {
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.container__descricao {
+    padding: 2em;
 }
