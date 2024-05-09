@@ -2,8 +2,9 @@
 :root {
     --branco-principal: #ffffff;
     --cinza-secundario: #c0c0c0;
-    --botao-azul: #167bf7;
     --cor-de-fundo: #00030c;
+    --botao-azul: #167bf7;
+    --botao-azul-efeito: #3c92fa;
     --fonte-principal: 'Inter';
 }
 
@@ -55,6 +56,11 @@ body {
     text-decoration: none;
     display: block;
     margin-bottom: 1em;
+}
+
+.container__botao:hover {
+    background-color: var(--botao-azul-efeito);
+    color: var(--cor-de-fundo);
 }
 
 .container__aviso {
@@ -115,4 +121,47 @@ body {
 .lista__item {
     font-size: 32px;
     color: var(--branco-principal);
+}
+
+.rodape {
+    text-align: center;
+    margin-top: 5em 3em;
+}
+
+.logo {
+    margin-bottom: 1em;
+    display: block;
+    margin: 0 auto;
+}
+
+.rodape__lista {
+    display: flex;
+    list-style-type: none;
+    gap: 40px;
+    justify-content: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.lista__link a {
+    color: var(--branco-principal);
+    text-decoration: none;
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+}
+
+.rodape__texto{
+    color: var(--cinza-secundario);
+    text-align: center;
+    margin-bottom: 1em;
+    font-family: var(--fonte-principal);
+    font-size: 14px;
+}
+
+.lista__link a:hover {
+    color: var(--botao-azul);
+}
+
+.lista__link a:active {
+    color: purple;
 }
