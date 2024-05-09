@@ -168,6 +168,7 @@ body {
 
 @media screen and (max-width: 768px) {
 
+    /*container*/
     .container {
         display: block;
         background-image: none;
@@ -180,6 +181,11 @@ body {
     .container__caixa{
         margin: 2em 2em ;
     }
+
+    .container__secundario{
+        display: flex;
+        flex-direction: column-reverse;
+      }
     
     .secundario {
         margin: 0;
@@ -188,13 +194,37 @@ body {
 
     .secudario__imagem{
         width: 50vw;
+        align-items: center;
+    }
+
+    /* dispositivos */
+    .dispositivos{
+        display: block;
     }
 
     .dispositivos__lista{
         display: block;
     }
 
+    .descricao_titulo {
+        display: block;
+        align-items: center;
+    }
+    
+    .descricao__texto{
+        text-align: center;
+    }
+
+    /*rodape */
+    .rodape{
+        display: block;
+    }
+
     .rodape__lista {
+        display: block;
+    }
+
+    .rodape__texto{
         display: block;
     }
 }
